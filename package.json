@@ -1,0 +1,17 @@
+{
+  "name": "harvestr-server",
+  "version": "0.0.0",
+  "description": "harvestr backend request server",
+  "main": "server.js",
+  "scripts": {
+    "watch": "PORT=8081 && nodemon src/server.js",
+    "start": "PORT=8081 && node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Ferrer",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  }
+}
