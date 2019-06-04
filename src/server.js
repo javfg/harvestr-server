@@ -26,8 +26,6 @@ const doRequest = function (url) {
 // TODO: Rate limiting?
 // GET - query.
 server.get('/query', async (req, res) => {
-  let data;
-
   try {
     console.log('query:', req.query.address.substring(0, 80));
 
@@ -35,7 +33,6 @@ server.get('/query', async (req, res) => {
   } catch (e) {
     console.log('e', e);
 
-    // TODO: Log errors!
     res.status(400).send();
   } finally {
     console.log('doc', doc.status);
